@@ -11,7 +11,7 @@ token = "<your influx API token>"
 # Store the URL of your InfluxDB instance
 url="http://127.0.0.1:8086"
 
-measurement_name = "rackpi"
+measurement_name = "raspberrypi"
 
 client = influxdb_client.InfluxDBClient(
     url=url,
