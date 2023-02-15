@@ -45,7 +45,7 @@ body = [
             "mem_percent": mem.percent,
             "mem_free": mem.free,
             "mem_used": mem.used,
-            "cpu_core0_temp": temp[0].current
+            "cpu_temp": temp[0].current
         }
     }
 ]
