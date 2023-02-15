@@ -9,3 +9,4 @@ Inspired by [this guide](https://simonhearne.com/2020/pi-metrics-influx/), I wro
 4. Download this script to your pi's home directory
 5. Update the script with your influxdb credentials
 6. Run ``` crontab -e ``` and add this scripr to run every minute by adding ` * * * * * /home/pi/rpi-stats-influx.py ` to the end of the file
+7. Upload the dashboard_template.json file to influxdb so you have a basic dashboard to view metrics
