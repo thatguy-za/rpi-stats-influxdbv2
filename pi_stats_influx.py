@@ -7,7 +7,7 @@ from influxdb_client.client.write_api import SYNCHRONOUS
 
 bucket = "influx"
 org = "private"
-token = "FDLoKZpEZDZZeRUj_wmKDlVJXMTVbUIu3Ml9osQQHuYT0I3Bwt7uaZT-ZC7yMfFwanVqnKkOysc5zltW8a6dmw=="
+token = "<your influx API token>"
 # Store the URL of your InfluxDB instance
 url="http://127.0.0.1:8086"
 
