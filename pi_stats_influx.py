@@ -1,4 +1,3 @@
-  GNU nano 5.4                                                                             pi_stats_influx.py *                                                                                     
 import influxdb_client
 import datetime
 import psutil
