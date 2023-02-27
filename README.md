@@ -12,4 +12,4 @@ Inspired by [this guide](https://simonhearne.com/2020/pi-metrics-influx/), I wro
 7. Upload the dashboard_template.json file to influxdb so you have a basic dashboard to view metrics
 
 # Preview
-![alt text](https://i.imgur.com/RECCW0z.png)
+![alt text](https://i.imgur.com/V0Qfcrn.jpeg)
