@@ -50,6 +50,10 @@ net_out = round((net_out_2 - net_out_1) / 1024 / 1024, 3)
 # Get case temperature from DS18B20 sensor
 case_temp = sensor.get_temperature()
 
+#Calculate uptime
+uptime_hours = (time.time() - psutil.boot_time())/3600
+uptime_days = uptime_hours/24
+
 # format the data as a single measurement for influx
 body = [
     {
@@ -72,7 +76,10 @@ body = [
             "cpu_temp": temp[0].current,
             "eth0_in": net_in,
             "eth0_out": net_out,
-            "case_temp": case_temp
+            "case_temp": case_temp,
+            "uptime_hours": uptime_hours,
+            "uptime_days": uptime_days
+            
         }
     }
 ]
