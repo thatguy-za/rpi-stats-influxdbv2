@@ -44,6 +44,10 @@ net_out_2 = net_stat.bytes_sent
 net_in = round((net_in_2 - net_in_1) / 1024 / 1024, 3)
 net_out = round((net_out_2 - net_out_1) / 1024 / 1024, 3)
 
+#Calculate uptime
+uptime_hours = (time.time() - psutil.boot_time())/3600
+uptime_days = uptime_hours/24
+
 # format the data as a single measurement for influx
 body = [
     {
@@ -62,7 +66,9 @@ body = [
             "mem_used": mem.used,
             "cpu_temp": temp[0].current,
             "eth0_in": net_in,
-            "eth0_out": net_out
+            "eth0_out": net_out,
+            "uptime_hours": uptime_hours,
+            "uptime_days": uptime_days            
         }
     }
 ]
